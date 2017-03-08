@@ -1,0 +1,15 @@
+smartsight-hbase:
+  build: .
+  container_name: smartsight-hbase
+  hostname: smartsight-hbase
+  image: smartsight-hbase-standalone:1.0.3
+  restart: always
+  expose: 
+    - "16010"
+    - "2181"
+  ports:
+    - "2181:2181"
+    - "16010:16010"
+  network_mode: "bridge"
+  volumes:
+    - /home/data/hbase:/hbase/data/hbase
