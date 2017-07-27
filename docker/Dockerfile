@@ -1,6 +1,6 @@
 FROM 10.62.100.88:9999/bashell/alpine-bash:latest
 
-MAINTAINER "qianguodong" <qian.guodong5@zte.com.cn>
+
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
 
